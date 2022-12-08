@@ -1,18 +1,13 @@
 import { useAccount } from 'wagmi';
-import { Create, Header, Storage } from '../components';
+import { Header, Metadata } from '../components';
 
 function Page() {
   const { isConnected } = useAccount();
   return (
-    <>
-      <div className=''>
-        <Header />
-      </div>
-      <div className=''>
-        <Storage />
-        {/* <Create /> */}
-      </div>
-    </>
+    <div className='w-full mx-auto'>
+      <Header />
+      <Metadata />
+    </div>
   );
 }
 
