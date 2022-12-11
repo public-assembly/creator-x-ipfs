@@ -7,9 +7,9 @@ export const Header = () => {
   return (
     <header className='flex justify-between items-center border-b border-dashed border-gray-200 py-4'>
       <div>
-        <p>Public Assembly Creator</p>
+        <p>Creator</p>
       </div>
-      <div className='p-4'>
+      <div className=''>
         <ConnectKitButton />
         {isConnected && <Account />}
       </div>

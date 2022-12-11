@@ -14,9 +14,9 @@ function App({ Component, pageProps }: AppProps) {
     <WagmiConfig client={client}>
       <ConnectKitProvider>
         <NextHead>
-          <title>Public Assembly Creator</title>
+          <title>Creator</title>
         </NextHead>
-        <main className='px-2 sm:px-20 pb-6'>
+        <main className='px-5 sm:px-20 pb-6'>
           {mounted && <Component {...pageProps} />}
         </main>
       </ConnectKitProvider>

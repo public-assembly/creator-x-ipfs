@@ -4,7 +4,7 @@ import { Header, Metadata } from '../components';
 function Page() {
   const { isConnected } = useAccount();
   return (
-    <div className='w-full mx-auto'>
+    <div className=''>
       <Header />
       <Metadata />
     </div>

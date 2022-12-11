@@ -13,34 +13,42 @@ export const Metadata = () => {
     console.log('File to upload:', fileToUpload);
   };
 
-//   console.log('Name:', name);
-//   console.log('Description', description);
+  //   console.log('Name:', name);
+  //   console.log('Description', description);
 
   return (
     <div className=''>
       <div className='max-w-sm'>
-        <form className='flex flex-col gap-y-3 py-4'>
-          <label htmlFor='name'>Enter a name for your NFT</label>
-          <input
-            id='name'
-            name='name'
-            placeholder='Name'
-            type='text'
-            value={name}
-            onChange={(e) => setName(e.currentTarget.value)}
-            required
-          ></input>
-          <label htmlFor='name'>Provide a description of your NFT</label>
-          <input
-            id='description'
-            name='description'
-            placeholder='Description'
-            type='text'
-            value={description}
-            onChange={(e) => setDescription(e.currentTarget.value)}
-            required
-          ></input>
-          <div className='max-w-4rem py-2'>
+        <form className='flex flex-col gap-y-4 py-4'>
+          <div className='flex flex-col gap-y-1'>
+            <label className='text-[#3C4242]' htmlFor='name'>
+              Enter a name for your NFT
+            </label>
+            <input
+              id='name'
+              name='name'
+              placeholder='Name'
+              type='text'
+              value={name}
+              onChange={(e) => setName(e.currentTarget.value)}
+              required
+              className='bg-[#222222] rounded-md p-2 text-white'
+            ></input>
+          </div>
+          <div className='flex flex-col gap-y-1'>
+            <label className='text-[#3C4242]' htmlFor='name'>Provide a description of your NFT</label>
+            <input
+              id='description'
+              name='description'
+              placeholder='Description'
+              type='text'
+              value={description}
+              onChange={(e) => setDescription(e.currentTarget.value)}
+              required
+              className='bg-[#222222] rounded-md p-2 text-white'
+            ></input>
+          </div>
+          <div className='w-full sm:max-w-4rem py-2'>
             <label htmlFor='image' className='btn-secondary'>
               Select File
             </label>
